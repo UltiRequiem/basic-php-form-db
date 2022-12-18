@@ -8,8 +8,6 @@ if (!$name | !$email | !$comment) {
         header('Location: /');
 }
 
-$db = new SQLite3($db_file);
-
 $db->enableExceptions(true);
 
 try {
@@ -18,8 +16,7 @@ try {
         print "Thanks for answering!";
 } catch (Exception) {
         print "$name, something went wrong with the Database!";
-
-        print '<a href="/">Return Home</a>';
-
-        die();
 }
+
+
+print '</br><a href="/">Return Home</a>';

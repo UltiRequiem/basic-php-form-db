@@ -40,7 +40,6 @@
         <?php
         include 'config.php';
 
-        $db = new SQLite3($db_file);
         $res = $db->query("SELECT * FROM $db_name");
 
         while ($row = $res->fetchArray()) {

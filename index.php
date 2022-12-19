@@ -43,7 +43,7 @@
         $res = $db->query("SELECT * FROM $db_name");
 
         while ($row = $res->fetchArray()) {
-                echo " <div> Name: {$row['name']} </br> Comment: {$row['comment']}</div> </br>";
+                print " <div> Name: {$row['name']} </br> Comment: {$row['comment']}</div> </br>";
         }
 
         ?>
